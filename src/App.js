@@ -1,5 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
+import styled from "styled-components";
+
+const Container = styled.div`
+  display: flex;
+  > button {
+    width: 50px;
+  }
+`;
 
 function App() {
   return (
@@ -7,10 +15,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Test</p>
-        <div>
+        <Container className="button_container">
           <button>+</button>
           <button>-</button>
-        </div>
+        </Container>
       </header>
     </div>
   );
